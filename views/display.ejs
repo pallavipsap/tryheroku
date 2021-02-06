@@ -1,0 +1,27 @@
+<html>
+<head>
+
+<title> Registration Details </title>
+<!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> -->
+
+
+<body>
+
+    <textarea name = "userdata" id = "userdata_json"><%- JSON.stringify(data) %></textarea>
+	<div class = "register">
+        <h1>Your account details</h1>
+        <textarea id = "login_details"></textarea>
+    </div>
+</body>
+
+
+
+<script>
+        var json_object = <%- JSON.stringify(data)%>;
+	    document.getElementById("login_details").innerHTML = json_object.username + " " + json_object.password
+       
+</script>
+
+</head>
+</html>
+
