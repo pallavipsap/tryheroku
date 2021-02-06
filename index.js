@@ -1,3 +1,4 @@
+var PORT = process.env.PORT || 5000
 var express = require('express');
 const router = express.Router()
 const session = require('express-session');
